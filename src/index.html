@@ -1,0 +1,1379 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Main page</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="bg-gray-100">
+    <!--sticky header-->
+    <header class="sticky top-0 bg-white shadow-md z-50">
+      <div
+        class="container mx-auto px-2 space-x-6 flex items-center justify-between h-16"
+      >
+        <div class="flex items-center justify-center gap-4">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="bg-blue-500 rounded-lg p-1 w-6"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z"
+            />
+          </svg>
+
+          <div>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="w-6"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z"
+              />
+            </svg>
+          </div>
+        </div>
+        <div class="flex-1">
+          <input
+            type="text"
+            placeholder="Search"
+            class="w-full px-6 py-2 text-base border border-gray-300 rounded focus:outline-none focus:ring-blue-600"
+          />
+        </div>
+        <div class="flex items-center space-x-4">
+          <button
+            class="bg-gray-200 rounded-full h-10 w-10 flex items-center justify-center"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="w-6"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+              />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </header>
+    <!--header non-sticky-->
+    <div class="hidden sm:block bg-white shadow-sm border-t border-gray-200">
+      <div
+        class="container mx-auto px-4 flex items-center justify-between h-14"
+      >
+        <div class="flex items-center space-x-2">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="bg-blue-200 rounded-lg"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 0 0 2.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 0 1-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 0 0-1.091-.852H4.5A2.25 2.25 0 0 0 2.25 4.5v2.25Z"
+            />
+          </svg>
+          <div class="flex flex-col mt-2">
+            <span class="text-sm">02191006010</span>
+            <span class="text-xs text-gray-500">پشتیبانی سریع</span>
+          </div>
+        </div>
+        <div class="flex space-x-4">
+          <div class="flex items-center space-x-2">
+            <span>مجله</span>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="h-6 w-6"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M12 6.042A8.967 8.967 0 0 0 6 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 0 1 6 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 0 1 6-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0 0 18 18a8.967 8.967 0 0 0-6 2.292m0-14.25v14.25"
+              />
+            </svg>
+          </div>
+          <div
+            class="flex items-center space-x-2 border-l border-gray-300 pl-4"
+          >
+            <span>فروشگاه</span>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="h-6 w-6"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M13.5 21v-7.5a.75.75 0 0 1 .75-.75h3a.75.75 0 0 1 .75.75V21m-4.5 0H2.36m11.14 0H18m0 0h3.64m-1.39 0V9.349M3.75 21V9.349m0 0a3.001 3.001 0 0 0 3.75-.615A2.993 2.993 0 0 0 9.75 9.75c.896 0 1.7-.393 2.25-1.016a2.993 2.993 0 0 0 2.25 1.016c.896 0 1.7-.393 2.25-1.015a3.001 3.001 0 0 0 3.75.614m-16.5 0a3.004 3.004 0 0 1-.621-4.72l1.189-1.19A1.5 1.5 0 0 1 5.378 3h13.243a1.5 1.5 0 0 1 1.06.44l1.19 1.189a3 3 0 0 1-.621 4.72M6.75 18h3.75a.75.75 0 0 0 .75-.75V13.5a.75.75 0 0 0-.75-.75H6.75a.75.75 0 0 0-.75.75v3.75c0 .414.336.75.75.75Z"
+              />
+            </svg>
+          </div>
+          <div
+            class="flex items-center space-x-2 border-l border-gray-300 pl-4"
+          >
+            <span>خانه</span>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="h-6 w-6"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="m2.25 12 8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25"
+              />
+            </svg>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--mobile navbar-->
+    <div
+      class="lg:hidden rounded-lg fixed bottom-2 left-1/2 transform -translate-x-1/2 bg-white shadow-lg py-3 flex justify-between items-center px-4 z-50"
+    >
+      <div class="flex space-x-6">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          class="h-6 w-6"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="m2.25 12 8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25"
+          />
+        </svg>
+
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          class="h-6 w-6"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M13.5 21v-7.5a.75.75 0 0 1 .75-.75h3a.75.75 0 0 1 .75.75V21m-4.5 0H2.36m11.14 0H18m0 0h3.64m-1.39 0V9.349M3.75 21V9.349m0 0a3.001 3.001 0 0 0 3.75-.615A2.993 2.993 0 0 0 9.75 9.75c.896 0 1.7-.393 2.25-1.016a2.993 2.993 0 0 0 2.25 1.016c.896 0 1.7-.393 2.25-1.015a3.001 3.001 0 0 0 3.75.614m-16.5 0a3.004 3.004 0 0 1-.621-4.72l1.189-1.19A1.5 1.5 0 0 1 5.378 3h13.243a1.5 1.5 0 0 1 1.06.44l1.19 1.189a3 3 0 0 1-.621 4.72M6.75 18h3.75a.75.75 0 0 0 .75-.75V13.5a.75.75 0 0 0-.75-.75H6.75a.75.75 0 0 0-.75.75v3.75c0 .414.336.75.75.75Z"
+          />
+        </svg>
+
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          class="h-6 w-6"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M12 6.042A8.967 8.967 0 0 0 6 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 0 1 6 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 0 1 6-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0 0 18 18a8.967 8.967 0 0 0-6 2.292m0-14.25v14.25"
+          />
+        </svg>
+      </div>
+    </div>
+    <!--carousel-->
+    <div class="container mx-auto p-4">
+      <div class="relative w-full overflow-hidden">
+        <div
+          class="w-full flex snap-x snap-mandatory overflow-x-auto scroll-smooth"
+          tabindex="0"
+        >
+          <div class="flex-shrink-0 w-full snap-center">
+            <img src="assets/banner1.webp" alt="1" class="w-full h-auto" />
+          </div>
+          <div class="flex-shrink-0 w-full snap-center">
+            <img src="assets/banner2.webp" alt="1" class="w-full h-auto" />
+          </div>
+          <div class="flex-shrink-0 w-full snap-center">
+            <img src="assets/banner3.webp" alt="1" class="w-full h-auto" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--first book section-->
+    <div class="container mx-auto p-4">
+      <div
+        class="flex items-center justify-between mb-6 container bg-white rounded-lg"
+      >
+        <button
+          class="text-black text-sm bg-blue-300 rounded-lg px-2 py-1 mx-2 my-2 hover:underline"
+        >
+          مشاهده همه
+        </button>
+        <h2 class="text-lg font-bold text-blue-500 mx-2">عنوان جدید</h2>
+      </div>
+      <div class="flex gap-6">
+        <div class="flex gap-4 overflow-x-auto">
+          <div
+            class="relative bg-white border rounded-lg shadow hover:shadow-lg transition"
+          >
+            <img
+              src="assets/monsajem.jpg"
+              alt="book cover"
+              class="w-full rounded-t-lg"
+            />
+            <div class="p-4">
+              <h3 class="text-sm font-semibold text-gray-800 mb-2" dir="rtl">
+                تکه هایی از یک کل منسجم
+              </h3>
+              <p class="text-xs text-gray-600" dir="rtl">توضیحات کتاب</p>
+            </div>
+            <div class="pt-2 px-2 border-t flex items-center">
+              <span class="bg-red-300 rounded-l-lg text-xs font-thin"
+                >299,000
+              </span>
+              <span class="bg-red-600 text-white rounded-r-lg text-xs font-thin"
+                >25%</span
+              >
+            </div>
+            <div class="pt-2 px-2 flex justify-between">
+              <span class="text-right">تومان 199,000 </span>
+              <div class="flex mx-2 mb-4 border-2 rounded-lg">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="w-6 h-6"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M15.75 10.5V6a3.75 3.75 0 1 0-7.5 0v4.5m11.356-1.993 1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 0 1-1.12-1.243l1.264-12A1.125 1.125 0 0 1 5.513 7.5h12.974c.576 0 1.059.435 1.119 1.007ZM8.625 10.5a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm7.5 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Z"
+                  />
+                </svg>
+              </div>
+            </div>
+          </div>
+          <div
+            class="relative bg-white border rounded-lg shadow hover:shadow-lg transition"
+          >
+            <img
+              src="assets/monsajem.jpg"
+              alt="book cover"
+              class="w-full rounded-t-lg"
+            />
+            <div class="p-4">
+              <h3 class="text-sm font-semibold text-gray-800 mb-2" dir="rtl">
+                تکه هایی از یک کل منسجم
+              </h3>
+              <p class="text-xs text-gray-600" dir="rtl">توضیحات کتاب</p>
+            </div>
+            <div class="pt-2 px-2 border-t flex items-center">
+              <span class="bg-red-300 rounded-l-lg text-xs font-thin"
+                >299,000
+              </span>
+              <span class="bg-red-600 text-white rounded-r-lg text-xs font-thin"
+                >25%</span
+              >
+            </div>
+            <div class="pt-2 px-2 flex justify-between">
+              <span class="text-right">تومان 199,000 </span>
+              <div class="flex mx-2 mb-4 border-2 rounded-lg">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="w-6 h-6"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M15.75 10.5V6a3.75 3.75 0 1 0-7.5 0v4.5m11.356-1.993 1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 0 1-1.12-1.243l1.264-12A1.125 1.125 0 0 1 5.513 7.5h12.974c.576 0 1.059.435 1.119 1.007ZM8.625 10.5a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm7.5 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Z"
+                  />
+                </svg>
+              </div>
+            </div>
+          </div>
+          <div
+            class="relative bg-white border rounded-lg shadow hover:shadow-lg transition"
+          >
+            <img
+              src="assets/monsajem.jpg"
+              alt="book cover"
+              class="w-full rounded-t-lg"
+            />
+            <div class="p-4">
+              <h3 class="text-sm font-semibold text-gray-800 mb-2" dir="rtl">
+                تکه هایی از یک کل منسجم
+              </h3>
+              <p class="text-xs text-gray-600" dir="rtl">توضیحات کتاب</p>
+            </div>
+            <div class="pt-2 px-2 border-t flex items-center">
+              <span class="bg-red-300 rounded-l-lg text-xs font-thin"
+                >299,000
+              </span>
+              <span class="bg-red-600 text-white rounded-r-lg text-xs font-thin"
+                >25%</span
+              >
+            </div>
+            <div class="pt-2 px-2 flex justify-between">
+              <span class="text-right">تومان 199,000 </span>
+              <div class="flex mx-2 mb-4 border-2 rounded-lg">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="w-6 h-6"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M15.75 10.5V6a3.75 3.75 0 1 0-7.5 0v4.5m11.356-1.993 1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 0 1-1.12-1.243l1.264-12A1.125 1.125 0 0 1 5.513 7.5h12.974c.576 0 1.059.435 1.119 1.007ZM8.625 10.5a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm7.5 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Z"
+                  />
+                </svg>
+              </div>
+            </div>
+          </div>
+          <div
+            class="relative bg-white border rounded-lg shadow hover:shadow-lg transition"
+          >
+            <img
+              src="assets/monsajem.jpg"
+              alt="book cover"
+              class="w-full rounded-t-lg"
+            />
+            <div class="p-4">
+              <h3 class="text-sm font-semibold text-gray-800 mb-2" dir="rtl">
+                تکه هایی از یک کل منسجم
+              </h3>
+              <p class="text-xs text-gray-600" dir="rtl">توضیحات کتاب</p>
+            </div>
+            <div class="pt-2 px-2 border-t flex items-center">
+              <span class="bg-red-300 rounded-l-lg text-xs font-thin"
+                >299,000
+              </span>
+              <span class="bg-red-600 text-white rounded-r-lg text-xs font-thin"
+                >25%</span
+              >
+            </div>
+            <div class="pt-2 px-2 flex justify-between">
+              <span class="text-right">تومان 199,000 </span>
+              <div class="flex mx-2 mb-4 border-2 rounded-lg">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="w-6 h-6"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M15.75 10.5V6a3.75 3.75 0 1 0-7.5 0v4.5m11.356-1.993 1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 0 1-1.12-1.243l1.264-12A1.125 1.125 0 0 1 5.513 7.5h12.974c.576 0 1.059.435 1.119 1.007ZM8.625 10.5a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm7.5 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Z"
+                  />
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--baner section 1-->
+    <div class="container mx-auto px-4 gap-2">
+      <div class="flex flex-col md:flex-row gap-2">
+        <div>
+          <img
+            src="assets/banner1.webp"
+            alt="banner1"
+            class="rounded-lg shadow-lg w-full"
+          />
+        </div>
+        <div>
+          <img
+            src="assets/banner3.webp"
+            alt="banner3"
+            class="rounded-lg shadow-lg w-full"
+          />
+        </div>
+      </div>
+    </div>
+    <!--container2-->
+    <div class="container mx-auto p-4">
+      <div
+        class="flex items-center justify-between mb-6 container bg-white rounded-lg"
+      >
+        <button
+          class="text-black text-sm bg-blue-300 rounded-lg px-2 py-1 mx-2 my-2 hover:underline"
+        >
+          مشاهده همه
+        </button>
+        <h2 class="text-lg font-bold text-blue-500 mx-2">تجدید چاپ</h2>
+      </div>
+      <div class="flex gap-6">
+        <div class="flex gap-4 overflow-x-auto">
+          <div
+            class="relative bg-white border rounded-lg shadow hover:shadow-lg transition"
+          >
+            <img
+              src="assets/monsajem.jpg"
+              alt="book cover"
+              class="w-full rounded-t-lg"
+            />
+            <div class="p-4">
+              <h3 class="text-sm font-semibold text-gray-800 mb-2" dir="rtl">
+                تکه هایی از یک کل منسجم
+              </h3>
+              <p class="text-xs text-gray-600" dir="rtl">توضیحات کتاب</p>
+            </div>
+            <div class="pt-2 px-2 border-t flex items-center">
+              <span class="bg-red-300 rounded-l-lg text-xs font-thin"
+                >299,000
+              </span>
+              <span class="bg-red-600 text-white rounded-r-lg text-xs font-thin"
+                >25%</span
+              >
+            </div>
+            <div class="pt-2 px-2 flex justify-between">
+              <span class="text-right">تومان 199,000 </span>
+              <div class="flex mx-2 mb-4 border-2 rounded-lg">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="w-6 h-6"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M15.75 10.5V6a3.75 3.75 0 1 0-7.5 0v4.5m11.356-1.993 1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 0 1-1.12-1.243l1.264-12A1.125 1.125 0 0 1 5.513 7.5h12.974c.576 0 1.059.435 1.119 1.007ZM8.625 10.5a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm7.5 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Z"
+                  />
+                </svg>
+              </div>
+            </div>
+          </div>
+          <div
+            class="relative bg-white border rounded-lg shadow hover:shadow-lg transition"
+          >
+            <img
+              src="assets/monsajem.jpg"
+              alt="book cover"
+              class="w-full rounded-t-lg"
+            />
+            <div class="p-4">
+              <h3 class="text-sm font-semibold text-gray-800 mb-2" dir="rtl">
+                تکه هایی از یک کل منسجم
+              </h3>
+              <p class="text-xs text-gray-600" dir="rtl">توضیحات کتاب</p>
+            </div>
+            <div class="pt-2 px-2 border-t flex items-center">
+              <span class="bg-red-300 rounded-l-lg text-xs font-thin"
+                >299,000
+              </span>
+              <span class="bg-red-600 text-white rounded-r-lg text-xs font-thin"
+                >25%</span
+              >
+            </div>
+            <div class="pt-2 px-2 flex justify-between">
+              <span class="text-right">تومان 199,000 </span>
+              <div class="flex mx-2 mb-4 border-2 rounded-lg">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="w-6 h-6"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M15.75 10.5V6a3.75 3.75 0 1 0-7.5 0v4.5m11.356-1.993 1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 0 1-1.12-1.243l1.264-12A1.125 1.125 0 0 1 5.513 7.5h12.974c.576 0 1.059.435 1.119 1.007ZM8.625 10.5a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm7.5 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Z"
+                  />
+                </svg>
+              </div>
+            </div>
+          </div>
+          <div
+            class="relative bg-white border rounded-lg shadow hover:shadow-lg transition"
+          >
+            <img
+              src="assets/monsajem.jpg"
+              alt="book cover"
+              class="w-full rounded-t-lg"
+            />
+            <div class="p-4">
+              <h3 class="text-sm font-semibold text-gray-800 mb-2" dir="rtl">
+                تکه هایی از یک کل منسجم
+              </h3>
+              <p class="text-xs text-gray-600" dir="rtl">توضیحات کتاب</p>
+            </div>
+            <div class="pt-2 px-2 border-t flex items-center">
+              <span class="bg-red-300 rounded-l-lg text-xs font-thin"
+                >299,000
+              </span>
+              <span class="bg-red-600 text-white rounded-r-lg text-xs font-thin"
+                >25%</span
+              >
+            </div>
+            <div class="pt-2 px-2 flex justify-between">
+              <span class="text-right">تومان 199,000 </span>
+              <div class="flex mx-2 mb-4 border-2 rounded-lg">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="w-6 h-6"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M15.75 10.5V6a3.75 3.75 0 1 0-7.5 0v4.5m11.356-1.993 1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 0 1-1.12-1.243l1.264-12A1.125 1.125 0 0 1 5.513 7.5h12.974c.576 0 1.059.435 1.119 1.007ZM8.625 10.5a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm7.5 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Z"
+                  />
+                </svg>
+              </div>
+            </div>
+          </div>
+          <div
+            class="relative bg-white border rounded-lg shadow hover:shadow-lg transition"
+          >
+            <img
+              src="assets/monsajem.jpg"
+              alt="book cover"
+              class="w-full rounded-t-lg"
+            />
+            <div class="p-4">
+              <h3 class="text-sm font-semibold text-gray-800 mb-2" dir="rtl">
+                تکه هایی از یک کل منسجم
+              </h3>
+              <p class="text-xs text-gray-600" dir="rtl">توضیحات کتاب</p>
+            </div>
+            <div class="pt-2 px-2 border-t flex items-center">
+              <span class="bg-red-300 rounded-l-lg text-xs font-thin"
+                >299,000
+              </span>
+              <span class="bg-red-600 text-white rounded-r-lg text-xs font-thin"
+                >25%</span
+              >
+            </div>
+            <div class="pt-2 px-2 flex justify-between">
+              <span class="text-right">تومان 199,000 </span>
+              <div class="flex mx-2 mb-4 border-2 rounded-lg">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="w-6 h-6"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M15.75 10.5V6a3.75 3.75 0 1 0-7.5 0v4.5m11.356-1.993 1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 0 1-1.12-1.243l1.264-12A1.125 1.125 0 0 1 5.513 7.5h12.974c.576 0 1.059.435 1.119 1.007ZM8.625 10.5a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm7.5 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Z"
+                  />
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--banner 2-->
+    <div class="w-full container mx-auto px-4 gap-4">
+      <img
+        src="assets/banner4.webp"
+        alt="banner4"
+        class="w-full rounded-lg shadow"
+      />
+    </div>
+    <!--container 3-->
+    <div class="container mx-auto p-4">
+      <div
+        class="flex items-center justify-between mb-6 container bg-white rounded-lg"
+      >
+        <button
+          class="text-black text-sm bg-blue-300 rounded-lg px-2 py-1 mx-2 my-2 hover:underline"
+        >
+          مشاهده همه
+        </button>
+        <h2 class="text-lg font-bold text-blue-500 mx-2">عناوین منتخب</h2>
+      </div>
+      <div class="flex gap-6">
+        <div class="flex gap-4 overflow-x-auto">
+          <div
+            class="relative bg-white border rounded-lg shadow hover:shadow-lg transition"
+          >
+            <img
+              src="assets/monsajem.jpg"
+              alt="book cover"
+              class="w-full rounded-t-lg"
+            />
+            <div class="p-4">
+              <h3 class="text-sm font-semibold text-gray-800 mb-2" dir="rtl">
+                تکه هایی از یک کل منسجم
+              </h3>
+              <p class="text-xs text-gray-600" dir="rtl">توضیحات کتاب</p>
+            </div>
+            <div class="pt-2 px-2 border-t flex items-center">
+              <span class="bg-red-300 rounded-l-lg text-xs font-thin"
+                >299,000
+              </span>
+              <span class="bg-red-600 text-white rounded-r-lg text-xs font-thin"
+                >25%</span
+              >
+            </div>
+            <div class="pt-2 px-2 flex justify-between">
+              <span class="text-right">تومان 199,000 </span>
+              <div class="flex mx-2 mb-4 border-2 rounded-lg">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="w-6 h-6"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M15.75 10.5V6a3.75 3.75 0 1 0-7.5 0v4.5m11.356-1.993 1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 0 1-1.12-1.243l1.264-12A1.125 1.125 0 0 1 5.513 7.5h12.974c.576 0 1.059.435 1.119 1.007ZM8.625 10.5a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm7.5 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Z"
+                  />
+                </svg>
+              </div>
+            </div>
+          </div>
+          <div
+            class="relative bg-white border rounded-lg shadow hover:shadow-lg transition"
+          >
+            <img
+              src="assets/monsajem.jpg"
+              alt="book cover"
+              class="w-full rounded-t-lg"
+            />
+            <div class="p-4">
+              <h3 class="text-sm font-semibold text-gray-800 mb-2" dir="rtl">
+                تکه هایی از یک کل منسجم
+              </h3>
+              <p class="text-xs text-gray-600" dir="rtl">توضیحات کتاب</p>
+            </div>
+            <div class="pt-2 px-2 border-t flex items-center">
+              <span class="bg-red-300 rounded-l-lg text-xs font-thin"
+                >299,000
+              </span>
+              <span class="bg-red-600 text-white rounded-r-lg text-xs font-thin"
+                >25%</span
+              >
+            </div>
+            <div class="pt-2 px-2 flex justify-between">
+              <span class="text-right">تومان 199,000 </span>
+              <div class="flex mx-2 mb-4 border-2 rounded-lg">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="w-6 h-6"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M15.75 10.5V6a3.75 3.75 0 1 0-7.5 0v4.5m11.356-1.993 1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 0 1-1.12-1.243l1.264-12A1.125 1.125 0 0 1 5.513 7.5h12.974c.576 0 1.059.435 1.119 1.007ZM8.625 10.5a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm7.5 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Z"
+                  />
+                </svg>
+              </div>
+            </div>
+          </div>
+          <div
+            class="relative bg-white border rounded-lg shadow hover:shadow-lg transition"
+          >
+            <img
+              src="assets/monsajem.jpg"
+              alt="book cover"
+              class="w-full rounded-t-lg"
+            />
+            <div class="p-4">
+              <h3 class="text-sm font-semibold text-gray-800 mb-2" dir="rtl">
+                تکه هایی از یک کل منسجم
+              </h3>
+              <p class="text-xs text-gray-600" dir="rtl">توضیحات کتاب</p>
+            </div>
+            <div class="pt-2 px-2 border-t flex items-center">
+              <span class="bg-red-300 rounded-l-lg text-xs font-thin"
+                >299,000
+              </span>
+              <span class="bg-red-600 text-white rounded-r-lg text-xs font-thin"
+                >25%</span
+              >
+            </div>
+            <div class="pt-2 px-2 flex justify-between">
+              <span class="text-right">تومان 199,000 </span>
+              <div class="flex mx-2 mb-4 border-2 rounded-lg">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="w-6 h-6"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M15.75 10.5V6a3.75 3.75 0 1 0-7.5 0v4.5m11.356-1.993 1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 0 1-1.12-1.243l1.264-12A1.125 1.125 0 0 1 5.513 7.5h12.974c.576 0 1.059.435 1.119 1.007ZM8.625 10.5a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm7.5 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Z"
+                  />
+                </svg>
+              </div>
+            </div>
+          </div>
+          <div
+            class="relative bg-white border rounded-lg shadow hover:shadow-lg transition"
+          >
+            <img
+              src="assets/monsajem.jpg"
+              alt="book cover"
+              class="w-full rounded-t-lg"
+            />
+            <div class="p-4">
+              <h3 class="text-sm font-semibold text-gray-800 mb-2" dir="rtl">
+                تکه هایی از یک کل منسجم
+              </h3>
+              <p class="text-xs text-gray-600" dir="rtl">توضیحات کتاب</p>
+            </div>
+            <div class="pt-2 px-2 border-t flex items-center">
+              <span class="bg-red-300 rounded-l-lg text-xs font-thin"
+                >299,000
+              </span>
+              <span class="bg-red-600 text-white rounded-r-lg text-xs font-thin"
+                >25%</span
+              >
+            </div>
+            <div class="pt-2 px-2 flex justify-between">
+              <span class="text-right">تومان 199,000 </span>
+              <div class="flex mx-2 mb-4 border-2 rounded-lg">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="w-6 h-6"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M15.75 10.5V6a3.75 3.75 0 1 0-7.5 0v4.5m11.356-1.993 1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 0 1-1.12-1.243l1.264-12A1.125 1.125 0 0 1 5.513 7.5h12.974c.576 0 1.059.435 1.119 1.007ZM8.625 10.5a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm7.5 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Z"
+                  />
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--banner 3-->
+    <div class="container mx-auto p-4">
+      <div class="flex flex-row w-full space-x-2">
+        <div
+          class="bg-blue-600 text-white rounded-lg w-full gap-2 p-8 flex justify-center"
+        >
+          بنر
+        </div>
+        <div
+          class="bg-blue-600 text-white rounded-lg w-full gap-2 p-8 flex justify-center"
+        >
+          بنر
+        </div>
+        <div
+          class="bg-blue-600 text-white rounded-lg w-full gap-2 p-8 flex justify-center"
+        >
+          بنر
+        </div>
+        <div
+          class="bg-blue-600 text-white rounded-lg w-full gap-2 p-8 flex justify-center"
+        >
+          بنر
+        </div>
+      </div>
+    </div>
+    <!--container 4-->
+    <div
+      class="container bg-blue-100 mx-auto px-4 gap-4 rounded-lg border-2 border-blue-500"
+    >
+      <div
+        class="flex items-center justify-between mb-6 container bg-white rounded-lg w-full"
+      >
+        <button
+          class="text-black text-sm bg-blue-300 rounded-lg px-2 py-1 mx-2 my-2 hover:underline"
+        >
+          مشاهده مجله
+        </button>
+        <h2 class="text-lg font-bold text-blue-500 mx-2">جی مگ</h2>
+      </div>
+      <div class="flex gap-6">
+        <div class="flex gap-4 overflow-x-auto">
+          <div
+            class="relative bg-white border rounded-lg shadow hover:shadow-lg transition flex-shrink-0 w-64"
+          >
+            <img
+              src="assets/honar.jpeg"
+              alt="book cover"
+              class="w-full rounded-t-lg"
+            />
+            <div class="p-4">
+              <h3 class="text-sm font-semibold text-gray-800 mb-2" dir="rtl">
+                هنر جریان یافتن
+              </h3>
+              <p class="text-xs text-gray-600" dir="rtl">
+                کتاب هنر جریان یافتن نوشته دیمون زاهاریادس به همت نشر گویا به
+                چاپ رسید است هدف مهم و اصلی نشر گویا به چاپ رسیده
+              </p>
+            </div>
+            <div class="p-4 border-t flex justify-between items-center">
+              <span class="text-xs"
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="w-3 h-3"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M10.5 19.5 3 12m0 0 7.5-7.5M3 12h18"
+                  />
+                </svg>
+              </span>
+
+              <span class="text-sm">بیشتر بخوانید</span>
+            </div>
+          </div>
+          <div
+            class="relative bg-white border rounded-lg shadow hover:shadow-lg transition flex-shrink-0 w-64"
+          >
+            <img
+              src="assets/honar.jpeg"
+              alt="book cover"
+              class="w-full rounded-t-lg"
+            />
+            <div class="p-4">
+              <h3 class="text-sm font-semibold text-gray-800 mb-2" dir="rtl">
+                هنر جریان یافتن
+              </h3>
+              <p class="text-xs text-gray-600" dir="rtl">
+                کتاب هنر جریان یافتن نوشته دیمون زاهاریادس به همت نشر گویا به
+                چاپ رسید است هدف مهم و اصلی نشر گویا به چاپ رسیده
+              </p>
+            </div>
+            <div class="p-4 border-t flex justify-between items-center">
+              <span class="text-xs"
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="w-3 h-3"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M10.5 19.5 3 12m0 0 7.5-7.5M3 12h18"
+                  />
+                </svg>
+              </span>
+              <span class="text-sm">بیشتر بخوانید</span>
+            </div>
+          </div>
+          <div
+            class="relative bg-white border rounded-lg shadow hover:shadow-lg transition flex-shrink-0 w-64"
+          >
+            <img
+              src="assets/honar.jpeg"
+              alt="book cover"
+              class="w-full rounded-t-lg"
+            />
+            <div class="p-4">
+              <h3 class="text-sm font-semibold text-gray-800 mb-2" dir="rtl">
+                هنر جریان یافتن
+              </h3>
+              <p class="text-xs text-gray-600" dir="rtl">
+                کتاب هنر جریان یافتن نوشته دیمون زاهاریادس به همت نشر گویا به
+                چاپ رسید است هدف مهم و اصلی نشر گویا به چاپ رسیده
+              </p>
+            </div>
+            <div class="p-4 border-t flex justify-between items-center">
+              <span class="text-xs"
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="w-3 h-3"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M10.5 19.5 3 12m0 0 7.5-7.5M3 12h18"
+                  />
+                </svg>
+              </span>
+              <span class="text-sm">بیشتر بخوانید</span>
+            </div>
+          </div>
+          <div
+            class="relative bg-white border rounded-lg shadow hover:shadow-lg transition flex-shrink-0 w-64"
+          >
+            <img
+              src="assets/honar.jpeg"
+              alt="book cover"
+              class="w-full rounded-t-lg"
+            />
+            <div class="p-4">
+              <h3 class="text-sm font-semibold text-gray-800 mb-2" dir="rtl">
+                هنر جریان یافتن
+              </h3>
+              <p class="text-xs text-gray-600" dir="rtl">
+                کتاب هنر جریان یافتن نوشته دیمون زاهاریادس به همت نشر گویا به
+                چاپ رسید است هدف مهم و اصلی نشر گویا به چاپ رسیده
+              </p>
+            </div>
+            <div class="p-4 border-t flex justify-between items-center">
+              <span class="text-xs"
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="w-3 h-3"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M10.5 19.5 3 12m0 0 7.5-7.5M3 12h18"
+                  />
+                </svg>
+              </span>
+              <span class="text-sm">بیشتر بخوانید</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--banner 4-->
+    <div class="container mx-auto p-4">
+      <div class="flex flex-col md:flex-row gap-4">
+        <div>
+          <img
+            src="assets/banner4.webp"
+            alt="banner4"
+            class="w-full rounded-lg shadow-lg"
+          />
+        </div>
+        <div>
+          <img
+            src="assets/banner2.webp"
+            alt="banner2"
+            class="w-full rounded-lg shadow-lg"
+          />
+        </div>
+      </div>
+    </div>
+    <!--container 5-->
+    <div class="container mx-auto p-4">
+      <div
+        class="flex items-center justify-center mb-6 container bg-white rounded-lg"
+      >
+        <h2 class="text-lg font-bold text-blue-500 mx-2">بازدید های اخیر</h2>
+      </div>
+      <div class="flex gap-6">
+        <div class="flex gap-4 overflow-x-auto">
+          <div
+            class="relative bg-white border rounded-lg shadow hover:shadow-lg transition"
+          >
+            <img
+              src="assets/monsajem.jpg"
+              alt="book cover"
+              class="w-full rounded-t-lg"
+            />
+            <div class="p-4">
+              <h3 class="text-sm font-semibold text-gray-800 mb-2" dir="rtl">
+                تکه هایی از یک کل منسجم
+              </h3>
+              <p class="text-xs text-gray-600" dir="rtl">توضیحات کتاب</p>
+            </div>
+            <div class="pt-2 px-2 border-t flex items-center">
+              <span class="bg-red-300 rounded-l-lg text-xs font-thin"
+                >299,000
+              </span>
+              <span class="bg-red-600 text-white rounded-r-lg text-xs font-thin"
+                >25%</span
+              >
+            </div>
+            <div class="pt-2 px-2 flex justify-between">
+              <span class="text-right">تومان 199,000 </span>
+              <div class="flex mx-2 mb-4 border-2 rounded-lg">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="w-6 h-6"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M15.75 10.5V6a3.75 3.75 0 1 0-7.5 0v4.5m11.356-1.993 1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 0 1-1.12-1.243l1.264-12A1.125 1.125 0 0 1 5.513 7.5h12.974c.576 0 1.059.435 1.119 1.007ZM8.625 10.5a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm7.5 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Z"
+                  />
+                </svg>
+              </div>
+            </div>
+          </div>
+          <div
+            class="relative bg-white border rounded-lg shadow hover:shadow-lg transition"
+          >
+            <img
+              src="assets/monsajem.jpg"
+              alt="book cover"
+              class="w-full rounded-t-lg"
+            />
+            <div class="p-4">
+              <h3 class="text-sm font-semibold text-gray-800 mb-2" dir="rtl">
+                تکه هایی از یک کل منسجم
+              </h3>
+              <p class="text-xs text-gray-600" dir="rtl">توضیحات کتاب</p>
+            </div>
+            <div class="pt-2 px-2 border-t flex items-center">
+              <span class="bg-red-300 rounded-l-lg text-xs font-thin"
+                >299,000
+              </span>
+              <span class="bg-red-600 text-white rounded-r-lg text-xs font-thin"
+                >25%</span
+              >
+            </div>
+            <div class="pt-2 px-2 flex justify-between">
+              <span class="text-right">تومان 199,000 </span>
+              <div class="flex mx-2 mb-4 border-2 rounded-lg">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="w-6 h-6"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M15.75 10.5V6a3.75 3.75 0 1 0-7.5 0v4.5m11.356-1.993 1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 0 1-1.12-1.243l1.264-12A1.125 1.125 0 0 1 5.513 7.5h12.974c.576 0 1.059.435 1.119 1.007ZM8.625 10.5a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm7.5 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Z"
+                  />
+                </svg>
+              </div>
+            </div>
+          </div>
+          <div
+            class="relative bg-white border rounded-lg shadow hover:shadow-lg transition"
+          >
+            <img
+              src="assets/monsajem.jpg"
+              alt="book cover"
+              class="w-full rounded-t-lg"
+            />
+            <div class="p-4">
+              <h3 class="text-sm font-semibold text-gray-800 mb-2" dir="rtl">
+                تکه هایی از یک کل منسجم
+              </h3>
+              <p class="text-xs text-gray-600" dir="rtl">توضیحات کتاب</p>
+            </div>
+            <div class="pt-2 px-2 border-t flex items-center">
+              <span class="bg-red-300 rounded-l-lg text-xs font-thin"
+                >299,000
+              </span>
+              <span class="bg-red-600 text-white rounded-r-lg text-xs font-thin"
+                >25%</span
+              >
+            </div>
+            <div class="pt-2 px-2 flex justify-between">
+              <span class="text-right">تومان 199,000 </span>
+              <div class="flex mx-2 mb-4 border-2 rounded-lg">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="w-6 h-6"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M15.75 10.5V6a3.75 3.75 0 1 0-7.5 0v4.5m11.356-1.993 1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 0 1-1.12-1.243l1.264-12A1.125 1.125 0 0 1 5.513 7.5h12.974c.576 0 1.059.435 1.119 1.007ZM8.625 10.5a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm7.5 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Z"
+                  />
+                </svg>
+              </div>
+            </div>
+          </div>
+          <div
+            class="relative bg-white border rounded-lg shadow hover:shadow-lg transition"
+          >
+            <img
+              src="assets/monsajem.jpg"
+              alt="book cover"
+              class="w-full rounded-t-lg"
+            />
+            <div class="p-4">
+              <h3 class="text-sm font-semibold text-gray-800 mb-2" dir="rtl">
+                تکه هایی از یک کل منسجم
+              </h3>
+              <p class="text-xs text-gray-600" dir="rtl">توضیحات کتاب</p>
+            </div>
+            <div class="pt-2 px-2 border-t flex items-center">
+              <span class="bg-red-300 rounded-l-lg text-xs font-thin"
+                >299,000
+              </span>
+              <span class="bg-red-600 text-white rounded-r-lg text-xs font-thin"
+                >25%</span
+              >
+            </div>
+            <div class="pt-2 px-2 flex justify-between">
+              <span class="text-right">تومان 199,000 </span>
+              <div class="flex mx-2 mb-4 border-2 rounded-lg">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="w-6 h-6"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M15.75 10.5V6a3.75 3.75 0 1 0-7.5 0v4.5m11.356-1.993 1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 0 1-1.12-1.243l1.264-12A1.125 1.125 0 0 1 5.513 7.5h12.974c.576 0 1.059.435 1.119 1.007ZM8.625 10.5a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm7.5 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Z"
+                  />
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="bg-white p-4">
+      <div class="md:mx-12" dir="rtl">
+        <p class="text-blue-500 font-bold">درباره ما</p>
+        <p class="text-gray-500 font-thin">
+          مجموعه ما در سال یکهزاروسیصدو شصت و هشت خورشیدی در تهران تاسیس شد حوزه
+          فعالیت موسسه که با هدف تسهیل روند بخش کتاب و به روز کردن
+        </p>
+      </div>
+      <div
+        class="flex flex-col md:flex-row justify-between gap-2 p-2"
+        dir="rtl"
+      >
+        <div class="container rounded-lg border-2">
+          <div class="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
+            <div class="md:flex md:justify-between">
+              <div
+                class="grid grid-cols md:grid-row-3 gap-8 sm:gap-6 sm:grid-cols-3"
+              >
+                <div>
+                  <h2
+                    class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white"
+                  >
+                    نقشه سایت
+                  </h2>
+                  <ul class="text-gray-500 dark:text-gray-400 font-medium">
+                    <li class="mb-2">
+                      <a href="https://flowbite.com/" class="hover:underline"
+                        >تماس با ما</a
+                      >
+                    </li>
+                    <li class="mb-2">
+                      <a href="https://tailwindcss.com/" class="hover:underline"
+                        >درباره ما</a
+                      >
+                    </li>
+                    <li class="mb-2">
+                      <a href="https://tailwindcss.com/" class="hover:underline"
+                        >همکاری با ما</a
+                      >
+                    </li>
+                    <li class="mb-2">
+                      <a href="https://tailwindcss.com/" class="hover:underline"
+                        >خدمات به مشتریان</a
+                      >
+                    </li>
+                    <li class="mb-2">
+                      <a href="https://tailwindcss.com/" class="hover:underline"
+                        >فرم استخدام</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+                <div>
+                  <h2
+                    class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white"
+                  >
+                    ترین ها
+                  </h2>
+                  <ul class="text-gray-500 dark:text-gray-400 font-medium">
+                    <li class="mb-2">
+                      <a
+                        href="https://github.com/themesberg/flowbite"
+                        class="hover:underline"
+                        >جدید ترین ها</a
+                      >
+                    </li>
+                    <li class="mb-2">
+                      <a
+                        href="https://discord.gg/4eeurUVvTy"
+                        class="hover:underline"
+                        >تجدید چاپ</a
+                      >
+                    </li>
+                    <li class="mb-4">
+                      <a
+                        href="https://github.com/themesberg/flowbite"
+                        class="hover:underline"
+                        >پرفروش ترین ها</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+                <div>
+                  <h2
+                    class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white"
+                  >
+                    راهنمای سایت
+                  </h2>
+                  <ul class="text-gray-500 dark:text-gray-400 font-medium">
+                    <li class="mb-2">
+                      <a href="#" class="hover:underline">پشتیبانی سایت</a>
+                    </li>
+                    <li class="mb-2">
+                      <a href="#" class="hover:underline">حساب کاربری </a>
+                    </li>
+                    <li class="mb-2">
+                      <a href="#" class="hover:underline">لیست </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container rounded-lg border-2 p-2">
+          <div class="flex flex-col" dir="rtl">
+            <div class="flex flex-row justify-center items-center p-4 gap-4">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-6 bg-blue-200 rounded-lg text-blue-400 flex-none"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"
+                />
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z"
+                />
+              </svg>
+              <p class="text-gray-500 font-thin px-2">
+                تهران خیابان دماوند شهید بابایان خورشید پلاک ۱۲ واحد۲
+              </p>
+            </div>
+            <div class="flex flex-col md:flex-row md:justify-between p-4 gap-2">
+              <div class="flex gap-4" dir="rtl">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="w-6 bg-blue-200 text-blue-500 rounded-lg"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 0 0 2.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 0 1-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 0 0-1.091-.852H4.5A2.25 2.25 0 0 0 2.25 4.5v2.25Z"
+                  />
+                </svg>
+                <span class="text-gray-500" dir="ltr">021 91006010</span>
+              </div>
+              <div class="flex flex-row gap-4">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="w-6 bg-blue-200 text-blue-500 rounded-lg"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75"
+                  />
+                </svg>
+                <span class="text-gray-500">info@gmail.com</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
